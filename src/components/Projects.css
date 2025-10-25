@@ -1,0 +1,128 @@
+/* Projects Section */
+.my-projects {
+  padding: 80px 20px;
+  max-width: 1300px;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+.my-projects .skills-title {
+  font-size: 42px;
+  font-weight: bold;
+  margin: 0 auto 10px;
+  text-align: center;
+}
+
+.my-projects .underline {
+  width: 100px;
+  height: 4px;
+  background: #1dd3f8;
+  margin: 0 auto 40px;
+  border-radius: 2px;
+}
+
+.project-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  gap: 40px;
+}
+
+.project-imgbox {
+  width: 45%;
+  min-width: 300px;
+}
+
+.project-imgbox img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(114, 127, 222, 0.3);
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding-left: 5%;
+}
+
+.project-info h1 {
+  width: 90%;
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 0;
+  max-width: 450px;
+}
+
+.project-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 90%;
+  max-width: 400px;
+  min-width: 300px;
+  margin-bottom: 50px;
+}
+
+.project-info ul li {
+  margin-bottom: 15px;
+  color: #c0c0c0;
+}
+
+.project-info button {
+  color: white;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 1px solid #727fdeb4;
+  background-color: #2200493d;
+  box-shadow: 0 0 5px #727fde86;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.project-info button:hover {
+  box-shadow: 0 0 15px #727fde86;
+  opacity: 0.7;
+}
+
+.project-note {
+  text-align: center;
+  color: #aab0d0;
+  font-size: 16px;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .project-card {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+
+  .project-imgbox {
+    width: 100%;
+  }
+
+  .project-info {
+    width: 100%;
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-info h1 {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .project-info ul {
+    width: 100%;
+  }
+}

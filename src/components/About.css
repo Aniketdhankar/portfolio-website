@@ -1,0 +1,186 @@
+/* About Section */
+.about-section {
+  padding: 80px 20px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.section-title {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.intro-text {
+  text-align: center;
+  color: #aab0d0;
+  max-width: 800px;
+  margin: 30px auto;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 50px;
+  align-items: start;
+}
+
+.left-box {
+  padding: 40px;
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.left-box h3 {
+  font-size: 24px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.left-box p {
+  color: #c0c0c0;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.resume-btn,
+.contact-btn {
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+  border: 1px solid #727fdeb4;
+  background-color: #2200493d;
+  color: white;
+  cursor: pointer;
+}
+
+.resume-btn:hover,
+.contact-btn:hover {
+  background-color: #727fde;
+  box-shadow: 0 0 15px #727fde6f;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.right-box,
+.connect-box {
+  padding: 40px;
+  background: rgba(20, 20, 20, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.right-box h3,
+.connect-box h3 {
+  font-size: 20px;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.personal-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.personal-details p {
+  color: #c0c0c0;
+  margin: 0;
+  font-size: 15px;
+}
+
+.personal-details strong {
+  color: #1dd3f8;
+}
+
+.connect-icons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.connect-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #727fde;
+  border-radius: 50%;
+  color: lightgray;
+  text-decoration: none;
+  font-size: 24px;
+  transition: all 0.3s ease;
+}
+
+.connect-icons a:hover {
+  background-color: #727fde;
+  color: black;
+  box-shadow: 0 0 15px #727fde6f;
+}
+
+@media screen and (max-width: 768px) {
+  .about-section {
+    padding: 50px 20px;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .left-box,
+  .right-box,
+  .connect-box {
+    padding: 25px 20px;
+  }
+
+  .left-box h3,
+  .right-box h3,
+  .connect-box h3 {
+    font-size: 18px;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .resume-btn,
+  .contact-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .personal-details p {
+    font-size: 14px;
+  }
+}
